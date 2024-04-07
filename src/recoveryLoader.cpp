@@ -21,7 +21,7 @@
 
 #if NRF_LOG_ENABLED
   #include "logging/NrfLogger.h"
-Pinetime::Logging::NrfLogger logger;
+Pinetime::Logging::NrfLogger logger(nullptr);
 #else
   #include "logging/DummyLogger.h"
 Pinetime::Logging::DummyLogger logger;

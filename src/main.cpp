@@ -49,10 +49,8 @@
 
 #if NRF_LOG_ENABLED
   #include "logging/NrfLogger.h"
-Pinetime::Logging::NrfLogger logger;
 #else
   #include "logging/DummyLogger.h"
-Pinetime::Logging::DummyLogger logger;
 #endif
 
 static constexpr uint8_t touchPanelTwiAddress = 0x15;
@@ -97,6 +95,11 @@ Pinetime::Controllers::HeartRateController heartRateController;
 Pinetime::Applications::HeartRateTask heartRateApp(heartRateSensor, heartRateController);
 
 Pinetime::Controllers::FS fs {spiNorFlash};
+#if NRF_LOG_ENABLED
+Pinetime::Logging::NrfLogger logger(&fs);
+#else
+Pinetime::Logging::DummyLogger logger;
+#endif
 Pinetime::Controllers::Settings settingsController {fs};
 Pinetime::Controllers::MotorController motorController {};
 

@@ -46,6 +46,7 @@ void FS::Init() {
 #ifndef PINETIME_IS_RECOVERY
   VerifyResource();
 #endif
+  isInitializedFlag = true;
 }
 
 void FS::VerifyResource() {

@@ -39,6 +39,10 @@ namespace Pinetime {
         return blockSize;
       }
 
+      bool isInitialized() const {
+        return isInitializedFlag;
+      }
+
     private:
       Pinetime::Drivers::SpiNorFlash& flashDriver;
 
@@ -72,6 +76,7 @@ namespace Pinetime {
       const struct lfs_config lfsConfig;
 
       lfs_t lfs;
+      bool isInitializedFlag = false;
 
       static int SectorSync(const struct lfs_config* c);
       static int SectorErase(const struct lfs_config* c, lfs_block_t block);
