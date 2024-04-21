@@ -30,7 +30,7 @@ namespace Pinetime {
       int m_curFileRecordsWritten = 0;
       int m_fileNameCounter = 0;
       static constexpr int kFileNamesToRotate = 10;
-      static constexpr int kRecordsToRotate = 10;
+      static constexpr int kRecordsToRotate = 50;
 
       bool m_is_file_opened = false;
       bool m_open_attempt_performed = false;

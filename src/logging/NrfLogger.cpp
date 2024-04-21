@@ -188,7 +188,7 @@ bool NrfLogger::EnsureFileOpened() {
     return true;
   }
   char file_name_buf[20];
-  sprintf(file_name_buf, "/debug_%d.log", m_fileNameCounter);
+  sprintf(file_name_buf, "/dbg_%d.log", m_fileNameCounter);
   const int result = m_fs->FileOpen(
       &m_file,
       file_name_buf,
