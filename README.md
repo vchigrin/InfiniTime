@@ -1,3 +1,4 @@
+
 <div align="center">
 
 ![Header Image](doc/logo/watchface_collage.png)
@@ -12,7 +13,12 @@
 [![Stars - InfiniTime](https://img.shields.io/github/stars/InfiniTimeOrg/InfiniTime?style=social)](https://github.com/InfiniTimeOrg/InfiniTime/stargazers)
 [![Forks - InfiniTime](https://img.shields.io/github/forks/InfiniTimeOrg/InfiniTime?style=social)](https://github.com/InfiniTimeOrg/InfiniTime/network/members)
 
-# InfiniTime
+# Private fork of InfiniTime
+- [Main repo](https://github.com/InfiniTimeOrg/InfiniTime)
+
+## Differences from main repo
+- Merged branch with "Find my phone" app [PR in main repo](https://github.com/InfiniTimeOrg/InfiniTime/pull/2053)
+- Merged branch with "Notification age" [PR in main repo](https://github.com/InfiniTimeOrg/InfiniTime/pull/2198)
 
 *Fast open-source firmware for the [PineTime smartwatch](https://pine64.org/devices/pinetime/) with many features, written in modern C++.*
 
@@ -42,9 +48,9 @@
 
 <br>
 
-> *InfiniTimeExplorer is only compatible with web browsers that support Web BLE. Current fully supported browsers include Chrome and Microsoft Edge.* 
+> *InfiniTimeExplorer is only compatible with web browsers that support Web BLE. Current fully supported browsers include Chrome and Microsoft Edge.*
 >
-> *We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to [Gadgetbridge](https://gadgetbridge.org/).* 
+> *We removed mentions to NRFConnect as this app is closed source and recent versions do not work anymore with InfiniTime (the last version known to work is 4.24.3). If you used NRFConnect in the past, we recommend you switch to [Gadgetbridge](https://gadgetbridge.org/).*
 
 ## Development
 
